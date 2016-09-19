@@ -8,12 +8,18 @@
 
 	<h1 align="center">Sistema de Aprovação</h1>
 	
+	<h2 align="center">
 	<form>
-		Nome: <input type="text" name="nome" value="${param.nome}"><br>
-		Frequencia: <input type="text" name="frequencia" value="${param.frequencia}"><br>
-		Nota Final: <input type="text" name="nota" value="${param.nota}"><br>
+	
+		<p>  Nome:   <input type="text" name="nome" value="${param.nome}"><br> </p>
+		<p>Frequencia: <input type="text" name="frequencia" value="${param.frequencia}"><br> </p>
+		<p>Nota Final:  <input type="text" name="nota" value="${param.nota}"><br> </p>
+		
+	
 		<button>Resultado</button>
+		
 	</form>
+	</h2>
     <b>${resultadoNota}</b>
 </body>
 </html>
