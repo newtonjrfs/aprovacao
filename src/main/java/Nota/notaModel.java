@@ -6,7 +6,7 @@ public class notaModel {
 	    
 
 	    String result = "";
-	    
+	    int cont = 0;
 	     
 	    if (nota>=6 && frequencia>= 72) {
 	    	
@@ -14,17 +14,19 @@ public class notaModel {
 	      
 	    }else if(nota>=6 && frequencia<72){
 	    	
-	    	result = "Reprovado por frequência";
+	    	result = "Reprovado por frequencia";
 	    	
 	    }else if(nota<6 && frequencia >= 72){
 	    	
-	    	result = "Reprovado por média";
+	    	result = "Reprovado por media";
 	    	
-	    }else if(nota<6 && frequencia<72){
+	    }else if(nota<6 && frequencia<72 && cont>0){
 	    	
-	    	result = "Reprovado por média e frequência";
+	    	result = "Reprovado por media e frequencia";
 	    	
 	    }
+	    cont++;
+	   
 	    return result;
 	  }
 
